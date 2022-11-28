@@ -201,7 +201,7 @@ async function run() {
         /////////////sellers////////////////
         app.post('/sellerscategory', async (req, res) => {
             const doctor = req.body;
-            const resul = await sellerCetagoryDetails.insertOne(doctor);
+            const result = await sellerCetagoryDetails.insertOne(doctor);
             res.send(result);
         })
 

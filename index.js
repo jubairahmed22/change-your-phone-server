@@ -272,7 +272,7 @@ async function run() {
         app.delete('/allsellers/:id', async (req, res) => {
             const id = req.params.id;
             const filter = { _id: ObjectId(id) };
-            const resul = await sellerCetagoryDetails.deleteOne(filter);
+            const result = await sellerCetagoryDetails.deleteOne(filter);
             res.send(result);
         });
 

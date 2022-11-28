@@ -207,7 +207,7 @@ async function run() {
 
         app.get('/allsellers', async (req, res) => {
             const query = {};
-            const option = await sellerCetagoryDetails.find(query).toArray();
+            const options = await sellerCetagoryDetails.find(query).toArray();
             res.send(options);
         })
         // app.get('/sellers', async (req, res) => {

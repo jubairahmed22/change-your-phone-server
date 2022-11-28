@@ -219,7 +219,7 @@ async function run() {
         app.get('/sellers', async (req, res) => {
             const email = req.query.email;
             const query = { email: email };
-            const bookings = await cetagoryDetails.find(query).toArray();
+            const booking = await cetagoryDetails.find(query).toArray();
             res.send(bookings)
         });
 

@@ -256,7 +256,7 @@ async function run() {
 
         //////////////All buyers/////////
         app.get('/allbuyers', async (req, res) => {
-            const query = {};
+            const quer = {};
             const users = await buyCollection.find(query).toArray();
             res.send(users);
         })

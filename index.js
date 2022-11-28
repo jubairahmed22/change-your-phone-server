@@ -193,7 +193,7 @@ async function run() {
             res.send(result);
         })
         app.post('/service', async (req, res) => {
-            const docto = req.body;
+            const doctor = req.body;
             const result = await cetagoryDetails.insertOne(doctor);
             res.send(result);
         })
